@@ -1,0 +1,363 @@
+= v6.2.4 - 2021-08-12 =
+  * Fix - Games not resized correctly
+
+= v6.2.3 - 2021-08-01 =
+  * Tweak - Optimized game resizing
+  * Fix - Error message on widgets page with WordPress 5.8
+  * Fix - PHP notices in new Widgets Block editor
+
+= v6.2.2 - 2021-03-04 =
+  * Tweak - Handle games with percentage width and height
+  * Fix - bxSlider links not clickable (Part 2)
+  * Fix - Handle games without dimensions
+  * Fix - Admin bar CSS issue
+
+= v6.2.1 - 2021-02-04 =
+  * New - Option to enable/disable the admin bar
+  * Tweak - Updated screenfull.js to v5.1.0
+  * Fix - Fullscreen not working properly
+  * Fix - Game dimensions division by zero
+  * Fix - bxSlider links not clickable
+
+= v6.2.0 - 2020-10-19 =
+  * New - PageSpeed Insights optimization
+  * New - Option to disable metadata on pre-game and play game pages
+  * Tweak - Updated to new Redux functions
+  * Tweak - bxSlider updated
+  * Tweak - Removed default footer placeholder widgets
+  * Tweak - Removed Links/Problem Reporter plugin recommendation because it is abandoned
+  * Tweak - Removed Adsense for Games (Flash version)
+  * Fix - Automatic game resize not working properly for landscape games
+  * Fix - Add/Remove favorites not working
+
+= v6.1.0 - 2020-09-06 =
+  * New - Automatic game resize to max available width
+  * Tweak - Removed outdated Yoast SEO compatibility code
+  * Fix - Page scrolls on clicking share button
+  * Fix - Share buttons overlaid by the game
+  * Fix - schema.org - Display ratings snippet only if ratings are available
+  * Fix - Game thumbnail not aligned with background on dark and halloween themes
+  * Fix - Sidebar position (left) not displayed correctly on all pages
+  * Fix - Removed Google+ code from single blog page
+
+= v6.0.2 - 2020-05-17 =
+  * Tweak - CSS optimization to get 100% SEO score at Google PageSpeed Insights (Lighthouse)
+  * Tweak - Horizontal header - Moved user links at the top of the mobile menu
+  * Fix - Fixed name of a suggested plugin
+  * Fix - schema.org - RatingCount will only be displayed if there are ratings available (Fixes issues with Google Search Console)
+  * Fix - schema.org - WorstRating changed to 0 (Fixes issues with Google Search Console)
+  * Fix - Don't display a fallback menu if no top navigation menu is defined
+  * Fix - Form label missing for promoted games sort selection
+
+= v6.0.1 - 2020-04-14 =
+  * New - Option to enable Login / Register links on the horizontal header
+  * Fix - Game not centered with disabled sidebars
+  * Fix - Turn lights off button not working properly
+  * Fix - Game description and banner alignment on the pre-game page
+
+= v6.0.0 - 2020-04-01 =
+  * New - Option to switch between two different headers (magazine style or single line header)
+  * New - Layout builder for play-games page. (Appearance -> Theme Options -> Games Page )
+  * New - Option to display related games on the slider belt on the single games page
+  * New - Layout builder for the play game container. Widget sidebars added next to the game
+  * New - Games widget to show random or related games
+  * New - Option to change the game buttons location (above or below the game)
+  * Tweak - Display only one category as thumbnail hover instead of multiple categories
+  * Tweak - Updated language file and renamed translations
+  * Tweak - Display images on game descriptions on the game-play page
+  * Fix - Query mobile games on mobile devices
+  * Fix - Game resize on small devices not working properly
+  * Fix - Exclude blog posts for the slider and promoted games box
+
+= v5.6.1 - 2019-10-14 =
+  * Fix - Comments displayed on pages if comments are disabled
+
+= v5.6.0 - 2019-10-08 =
+  * New - Set IOS Status Bar style in styling options. Refer to -> https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+  * New - screenfull.js updated to version v5.0.0
+  * Tweak - Empty Sidebar warning will only show if you're logged in as an administrator
+  * Tweak - Moved general.js into footer for improved render performance and load times.
+  * Tweak - Removed Google Plus follow button as the service has shut down.
+  * Tweak - Removed Google Plus share button as the service has shut down.
+  * Tweak - Moved Yoast SEO compatibility code to own file and includes additional checks to verify plugin is active.
+  * Tweak - Removed old BuddyPress template files
+  * Fix - Adsense auto responsive units will now fit their container automatically
+  * Fix - BuddyPress Profile notifications tab now working correctly.
+  * Fix - Replace login_headertitle with login_headertext (since WordPress 5.2)
+
+= v5.5.0 - 2019-03-21 =
+  * New - screenfull.js updated to version v4.1.0 (Fixes fullscreen issues)
+  * New - New lightbox gallery script integrated directly into the theme (no more plugins required!)
+  * Tweak - Header code option now includes a simple code editor (to help resolve errors)
+  * Tweak - Footer code option now includes a simple code editor (to help resolve errors)
+  * Tweak - Moved Play Game Page Settings to Subsection to cleanup UI
+  * Tweak - Old lightbox recommendation removed from suggested plugins
+  * Tweak - Replaced HTTP links by https in default settings
+  * Fix - Frontpage sorting not working properly after page reload
+  * Fix - Dark style - Color adjustments for game sorting dropdown
+  * Fix - PHP notice when using Yoast SEO Opengraph
+
+ = v5.4.0 - 2018-10-10 =
+  * New - Halloween Skin under theme options >> styling >> theme stylesheet
+  * New - Blog Category option moved to blog settings
+  * New - CSS 3 Compliance According to W3C Validator
+  * New - Option to enable or disable featured image on blog posts
+  * New - Option to enable or disable author box on blog posts
+  * New - Option to enable or disable breadcrumbs on blog posts
+  * New - Option to enable or disable the comments section on blog posts
+  * New - Option to enable or disable breadcrumbs on blog category or archive pages
+  * New - Option to enable or disable category description (for only blog category)
+  * New - Show Blog Category description on the blog page template
+  * New - Option to enable or disable expandable category description for blog category only
+  * New - Panel to customize blog posts
+  * New - Panel to customize blog archives & category
+  * New - Ability to select "posts" as blog posts without needing to use category set in theme options
+  * Fix - Minor validation errors
+  * Fix - Redirect to last viewed page after login
+  * Fix - Blog Archive page PHP error
+  * Fix - Latest games widget showing blog posts
+  * Fix - Top Bar icon color was changing on game & post pages
+
+= v5.3.0 - 2018-04-24 =
+  * New - Option to chose between two Fullscreen options (old style with reloading or JS-based without reloading)
+  * New - Option to enable / disable back to top button
+  * New - Newly built author box for blog posts (no more needing to use another plugin)!
+  * New - Social Media Buttons for author box, Facebook, Twitter, Google+, and much more!
+  * New - Support for shortcodes in the text widget
+  * New - Members can "create a group" from their buddypress profile if this functionality is enabled.
+  * New - Option to set the default order for promoted games box
+  * Tweak - Change top bar icon for BuddyPress Pages
+  * Tweak - Minor style improvements for BuddyPress Pages
+  * Fix - Predefined sort option on category pages doesn't work properly
+  * Fix - Sort option "Most Played" doesn't work correctly
+  * Fix - Disable Smooth Scrolling option
+  * Fix - Spelling Mistakes
+  * Fix - Tag pages show wrong games on mobile
+  * Fix - Promoted games not ordered correctly
+
+= v5.2.0 - 2017-12-17 =
+  * New - WordPress 4.9 ready
+  * New - Real Fullscreen mode without reloading
+  * New - Breadcrumbs on category pages option
+  * New - Toolbar color for Microsoft Mobile Devices
+  * New - Smooth scrolling option for desktop
+  * New - Menu to modify tag pages exactly like categories
+  * New - Set the number of games that load on Tag Archive Pages
+  * New - Option to show the tag description
+  * New - Option to show an expandable box for tag description (for extra long descriptions)
+  * New - Option to show breadcrumbs on Tag Archive Pages
+  * New - Set the layout for Tag Archives
+  * New - Set the order of games in the tag archives
+  * New - Filters to change the order, and style of tag archive pages (like categories)
+  * New - Panel to customize your search results page
+  * New - Set the number of games the load per page on search result pages
+  * New - Enable / Disable BreadCrumbs on Search Result Pages
+  * New - Set the layout for Search Result Pages
+  * New - Option to specify the number of tags on the tag cloud widget
+  * New - Option to specify the number of categories on the tag cloud widget
+  * New - Support for WordPress image galleries
+  * Tweak - Don't load sticky sidebar JS on mobile
+  * Tweak - Changed meta viewport tag to reflect google recommendation
+  * Fix - Sort option on tags & categories does nothing
+
+= v5.1.0 - 2017-06-09 =
+  * New - WordPress 4.8 ready
+  * New - Toolbar color for mobile devices
+  * New - Login Modal now supports login by email
+  * New - Added preconnect header for Google Fonts to improve load time
+  * Tweak - Clean up localization text domains
+  * Tweak - Improved fullscreen game displaying
+  * Tweak - Redirect to home on logout
+  * Fix - Sort and Show buttons on category pages not working on mobile
+  * Fix - Redirect to current page on login
+  * Fix - Home slider doesn't show mobile games if enabled
+  * Fix - Menu with submenu's always open on mobile
+
+= v5.0.0 - 2017-02-09 =
+  * New - Option to show an advertisement above the game
+  * New - Option to show an advertisement below the game
+  * New - Option to add adsense compliant margins to above game banner
+  * New - Option to add adsense compliant margins to below game banner
+  * New - Option enable/disable Sticky Sidebar
+  * New - Option to enable/disable veedi on pre-game page
+  * New - Option to enable/disable MyScorePresenter Widget on Pre-Game Page
+  * New - Option to enable/disable Top Bar on mobile devices
+  * New - Blog Category Header
+  * New - Blog Category Description
+  * New - Font Awesome updated to 4.7
+  * New - Social Network Telegram
+  * New - Social Network SnapChat
+  * New - Social Network Quora
+  * New - Social Network Soundcloud
+  * New - Social Network Delicious
+  * New - Social Network Linkedin
+  * New - Social Network Odnoklassniki
+  * New - Social Network VK
+  * New - Social Network Medium
+  * New - Social Network RenRen
+  * New - Social Network Stumbleupon
+  * New - Social Network Steam
+  * New - Social Network Twitch
+  * Tweak - Improved appearance of Buttons on BuddyPress profile page
+  * Tweak - Improved logic for modal login (now redirects to current page as opposed to homepage)
+  * Fix - Remove's padding below copyright footer.
+  * Fix - Buttons are now readable on BuddyPress Profile Pages
+
+= v4.3.0 - 2016-11-19 =
+  * New - Flag added to report spam button on BuddyPress pages
+  * New - Passes W3C Validator
+  * New - Option to hide My Game List Creator On Mobile Devices
+  * New - Option to hide Header Game Carousel On Mobile Devices
+  * New - Option To hide Header News On Mobile Devices
+  * New - Option To hide Front Page Slider On Mobile Devices
+  * New - Show MyScorePresenter widgets on game-landing page.
+  * New - Yoast SEO will show proper OpenGrap Image data (defaults to screenshot then to game thumbnail)
+  * New - BuddyPress Social Compatability
+  * New - Schema.org Markup For TopBar/Main Menu http://www.schema.org/SiteNavigationElement
+  * Tweak - Slight performance improvement for carousel
+  * Tweak - Lazy Load now applies to bxslider images for improved performance
+  * Fix - No more 404 errors on game pages when using screenshots
+  * Fix - Logo should display on wp-login.php page again
+  * Fix - Fixes schema markup error if game descriptions were longer than 500 characters
+  * Fix - Fixes duplicate rating value bug in schema
+  * Fix - Fixes jetpack subscription alignment buttons
+  * Fix - Image background placeholder not displayed properly
+  * Fix - Modal Window text on dark theme unreadable
+  * Fix - Registration confirmation text
+  * Fix - JSON LD now only shows on posts (fixes markup warnings)
+  * Fix - BuddyPress error on /group/ page
+
+= v4.2.0 - 2016-09-01 =
+  * New - Home Widget - Game Carousel
+  * New - Veedi integration
+  * New - Option to hide favorite games on the user panel widget
+  * New - Background colors on BuddyPress tabs
+  * New - Select thumbnail size on widgets (random games, most played and most rated)
+  * New - Moved mobile settings to own tab
+  * New - Hide footer widgets on mobile devices to improve load time / appearance (Enable on theme options)
+  * Fix - Banner size on friv layouts
+  * Tweak - Hide custom menu items on small screens
+  * Tweak - Removed blue background while images are loading
+
+= v4.1.0 - 2016-08-11 =
+  * New - Reddit Added As Social Networking Site
+  * New - JSON LD Markup For Blog Posts (schema.org/Article)
+  * New - Font Awesome updated to 4.6.3
+  * New - Expandable category description box (enable on theme options)
+  * Fix - Alignment of Blog Post share buttons
+  * Fix - Error where if BuddyPress wasn't installed you would get an error
+  * Fix - PHP Notice: bp_setup_current_user was called incorrectly
+
+= v4.0.0 - 2016-08-06 =
+  * New - WordPress 4.6 ready
+  * New - Option to set preferred view mode on category pages
+  * New - Added support for Advanced noCaptcha reCaptcha on modal login/register.
+  * New - Updated TGM Plugin Activation to 2.6.1.
+  * New - BuddyPress Pages now show appropriate titles when using Yoast SEO.
+  * New - Adds new and improved Forums Index.
+  * New - Hide Sidebar on mobile devices to improve load time / appearance (Enable on theme options).
+  * New - JSON LD Markup For Games (schema.org/VideoGame)
+  * New - Option to disable lazyload image animation
+  * New - Theme Check Compliance
+  * Fix - Remove extra css on /fullscreen/ pages.
+  * Fix - Fixed share buttons on blog posts.
+  * Fix - All Excess Schema.org Markup Removed.
+  * Fix - Small Issue when using score games (script would output twice one as plain text).
+  * Fix - Parent menu item not clickable
+  * Tweak - Moved category settings to a own tab
+
+= v3.3.0 - 2016-04-17 =
+  * New - WordPress 4.5 compatibility
+  * New - Full RTL support
+  * New - Widget to display latest blog posts
+  * New - New Schema.org markup
+  * Tweak - Recommended Plugins: Replaced Lightbox Plugin with WP Lightbox 2
+  * Fix - Schema.org Fixes
+  * Fix - Don't display blog posts on game widgets
+
+= v3.2.0 - 2016-03-04 =
+  * New - Disable Adsense for games on mobile devices
+  * Tweak - Improved WooCommerce support
+  * Fix - Corrected custom css path for child themes
+  * Fix - Display only mobile games on related games box if mobile feature is enabled
+
+= v3.1.0 - 2016-01-31 =
+  * New - Adsense for games parameter - maximum video length
+  * New - Adsense for games parameter - language code
+  * New - Option to replace login form with a button on user panel widget
+  * New - CSS adjustments for 'Advanced noCaptcha reCaptcha' plugin
+  * New - Tumblr Support for follow buttons.
+  * New - Replaced dark image placeholder with a loading animation if lazy load is enabled
+  * New - Improved bbPress Post Interface
+  * Fix - Minor display issue on certain browsers for users BuddyPress Profile Pages
+
+= v3.0.0 - 2015-12-24 =
+  * New - Front page builder (Appearance -> Widgets -> Front Page Builder)
+  * New - Full width page template
+  * New - Customizable top bar menu
+  * New - Tag parameters for Adsense for games (AFG) integration
+  * New - Option to disable footer widgets
+  * New - Option to redirect Register / Login buttons to default WordPress pages to be able to use e.g. captcha plugins
+  * New - Display game instructions on game page if pre-game page is disabled
+  * New - Display MyGameListCreator list on every front page design
+  * Tweak - Use comment_form() function on comments.php
+  * Tweak - Database query optimization
+  * Fix - Adsense for Games
+  * Fix - Previewing of draft games not working with enabled pre-game page
+
+= v2.0.0 - 2015-11-07 =
+  * New - Automatic theme updates
+  * New - Added a new view for category pages "Half"
+  * New - Display category description on category pages (Enable on settings page)
+  * New - Add login_form and register_form actions to modal boxes
+  * New - Option to upload a custom login logo
+  * New - Login logo - Replaced WordPress URL with site URL
+  * New - Login logo - Replaced 'Powered by WordPress' logo link name with site name
+  * New - Option to edit footer copyright text
+  * Tweak - Removed Redux Framework from theme source. Redux Framework plugin required now!
+  * Fix - BuddyPress integration caused a php warning
+
+= v1.4.0 - 2015-10-14 =
+  * New - Added some Buddypress buttons on user profile page
+  * New - Additional Schema Markup
+  * New - WordPress 4.3 compatibility
+  * New - Updated TGM Plugin Activation to 2.5.2
+  * New - Option to chose a Character Set (Cyrillic, Greek, Latin, Latin Extended, Vietnamese)
+  * Fix - Category selection on random games widget doesn't work
+  * Fix - Can't change "Hall of Fame" title
+  * Fix - Solved Dark Theme CSS Bug on BuddyPress
+  * Fix - Made Fullscreen page responsive (now it should look proper on mobile)
+  * Fix - Several W3C Validation Issues
+
+= v1.3.0 - 2015-07-27 =
+  * New - Advertisement spot on play game page (Game Content Banner)
+  * New - Updated Redux Framework to 3.5.5
+  * New - Updated TGM Plugin Activation to 2.5.0
+  * Fix - Lights on/off
+  * Fix - Banner size on Friv-Style view
+  * Fix - Custom CSS not compiled
+  * Fix - WP Favorite Posts loading image location
+
+= v1.2.0 - 2015-07-07 =
+  * New - jQuery based game resizing
+  * New - Friv-Style view with sidebar
+  * Tweak - Added wp_reset_query to custom queries
+  * Fix - News ticker category selection
+  * Fix - Custom CSS Compiler
+  * Fix - Removed hard-coded register/login URLs
+
+= v1.1.0 - 2015-05-25 =
+  * New - MyArcadeControls integration
+  * New - Admin links (Delete / Edit) on single view pages
+  * New - Options to enable/disable features separately for pre-game and game pages
+  * New - Option to enable/disable related games
+  * New - Translation file generated
+  * Fix - MyArcadeContest integration
+  * Fix - Corrected loading of the 404 page template
+  * Fix - Responsive progress bar
+
+= v1.0.1 - 2015-05-07 =
+  * Fix - Child theme compatibility
+
+= v1.0.0 - 2015-05-06 =
+  * Initial release

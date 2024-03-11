@@ -1,0 +1,91 @@
+input[type="text"],input[type="password"],textarea,.mt-slct .selecter-selected{background-color:#fcfcfc}
+input[type="text"]:focus,input[type="password"]:focus,textarea:focus,.mt-slct.focus .selecter-selected{background-color:#fff}
+.picker.picker-radio.checked .picker-flag,.picker.picker-checkbox.checked .picker-flag,
+[class*="botn"],a[class*="botn"],button,input[type="reset"],input[type="submit"],a.read-more{background-color:#3D3D3D}
+[class*="botn"]:hover,a[class*="botn"]:hover,button:hover,input[type="reset"]:hover,input[type="submit"]:hover,.lstgms .bx-controls-direction a,a.read-more:hover,.cmnt-cn>div .comment-reply-link:hover{background-color:#ff7518}
+.lstgms{border-bottom-color:#ff7518}
+.hdcn-1{background-color:#F8F8F8}
+.hdcn-4,.ftcn-1,a.rndgame:hover,.news-cn>strong,[class*="gmcn-sldr"] .gm-text,.news-cn:before{background-color:#4D4D4D}
+.news-cn>strong:after{border-top-color:#4D4D4D}
+.hdcn-3,.hdcn-5,.ftcn-2,[class*="gmcn-smal"] .gm-imag,[class*="gmcn-smal-2"] figure.gm-imag>a>span,[class*="gmcn-smal-3"] figure.gm-imag>a>span,[class*="gmcn-midl"] .gm-imag,.gm-cate a,[class*="gmcn-"] .gm-cate a:hover,.sdbr-cn .tagcloud a,[class*="gmcn-larg"] figure.gm-imag>a>span,.game-cn{background-color:#3D3D3D}
+[class*="gmcn-smal"] .gm-imag>a>span,.tagcloud a:hover,.gm-cate a:hover,[class*="gmcn-"] .gm-cate a,.mt-slct-cn .selecter-item:hover,.wp-pagenavi a:hover,.wp-pagenavi span.current,.progress,.game_opts>li:hover>a:before,.game_opts>li:hover>span>a:before{background-color:#ff7518}
+body{background-color:#1D1D1D}
+.hdcn-2,.bdcn{background-color:#fff}
+[class*="gmcn-smal"]{background-color:rgba(0,0,0,.1)}
+.menu li:hover>a,.menu li li,.menu-botn,a.rndgame,[class*="gmcn-smal"]:hover,a.botn-lgfa:before,.tagcloud a,.game-ctrl,#progressbar{background-color:rgba(0,0,0,.2)}
+.game_opts>li>a:before, .game_opts>li>span>a:before{background-color:rgba(0,0,0,.5)}
+[class*="gmcn-smal-2"], [class*="gmcn-smal-2"]:hover{background-color: transparent}
+body,[class^="post-"] .txcn p{color:#eee}
+.hdcn-1 h1,.hdcn-1>div>div[class*="fa-"],.selecter-item,.selecter-selected,[class^="post-"] .lst-social>li>a:before{color:#fff}
+a,.sdbr-cn [class*="gmcn-"] .gm-titl a,[class*="gmcn-larg"] div.gm-titl a{color:#fff;}
+a:hover,.shar-cnt li:hover a,.menu-top>li:hover>span,.menu-top>li:hover>a,.hdcn-1 h1:before,.hdcn-1>div>div[class*="fa-"]:before,[class*="gmcn-"] .gm-titl a:hover,.gm-play:before,.rndgame:before,.news-cn li a,.news-cn .fa-flash:before,.news-cn .bx-controls-direction a:hover,div[class*="gmcn-smal-2"] .gm-imag>a>span,[class*="gmcn-smal-3"] figure.gm-imag>a>span,.mt-slct-cn .selecter-item.selected:before,.mt-slct-cn .selecter-selected:after,.widget_mabp_recent_games [class*="gmcn-"] .gm-titl a:hover,.sdbr-cn .most-popu .bx-controls-direction a,#hall_of_fame .plays:before,#hall_of_fame .highscores:before,#hall_of_fame .bx-controls-direction a,[class*="gmcn-larg"] div.gm-titl a:hover,[class*="gmcn-larg"] figure.gm-imag>a>span:before,[class^="post-"] header h1,[class^="post-"] header h2,.pst-shr:hover>a,.pst-shr:hover>a:before,.titl strong,span.required,.form-allowed-tags code,abbr,[class^="post-"] .lst-social>li:hover>a:before,[class^="post-"] header p>a:hover{color:#ff7518;}
+[class*="botn"],a[class*="botn"],button,input[type="reset"],input[type="submit"],a.read-more,.menu>ul>li a,.menu>ul+a,.hdgms-cn .bx-prev,.hdgms-cn .bx-next,.ftcn,.ftcn a,.sldr-nw,.news-cn,.news-cn a,[class*="gmcn-"] .gm-titl a,[class*="gmcn-sldr"] .gm-desc,.ftcn [class*="gmcn-smal-2"] .gm-play,[class*="gmcn-smal-3"] figure.gm-imag>a>span strong,.hdcn [class*="gmcn-smal"] .gm-play,[class*="gmcn-midl"] .gm-play,[class*="gmcn-sldr"] .gm-play,.gm-cate a,[class*="gmcn-"] .gm-imag>a>span,.lstgms .bx-controls-direction a,.mt-slct-cn .selecter-item:hover,.mt-slct-cn .selecter-item.selected:hover:before,.tagcloud a,.wp-pagenavi a:hover,.wp-pagenavi span.current,.cmnt-cn>div .comment-reply-link:hover,.game-cn,.game-cn a,[class^="post-"] .game_opts>li>a:before,[class^="post-"] ul.game_opts>li>span>a:before,.titl{color: #fff;}
+.gm-play,#hall_of_fame .plays,[class^="post-"] p,[class^="post-"] p>a,.navtop,input[type="text"], input[type="password"], textarea, select, .mt-slct .selecter-selected{color: #999;}
+[class^="post-"] [class^="fa-"]:before,.navtop span,.pst-shr>a:before{color: #ddd;}
+a.botn-lgfa,a.botn-flgn{background-color: #3469AF;}
+.modal, .modal a:link{color:#000;}
+.boxed-cont{padding-top: 10px;padding-bottom: 10px;}
+.bdcn,.cmnt-cn>div .comment-reply-link,.single .ui-dialog:after,span.activity{background-color: #29292D;}
+.titl{border-bottom: 0;padding-bottom: 0; border-bottom: 1px solid #000;}
+.hdcn-1,.hdcn-2,.ftcn-1,.ftcn-2{background-color: transparent;}
+.hdcn-1,.ftcn-1{border-bottom: 1px solid #000;}
+.hdcn-2,.ftcn-2{border-top: 1px solid #4D4D4D;}
+.hdcn-1{padding-bottom: 10px;}
+.hdcn-1 h1,.hdcn-1>div>div[class*="fa-"],.menu-top>li,.menu-top>li>a{color: #fff;}
+.menu-top>li>span:before, .menu-top>li>a:before, .shar-cnt a:before{opacity: .5;}
+.ftcn-1{padding-top: 30px;}
+.ftcn-2{padding-top: 20px;}
+.form-allowed-tags code, pre{background-color: #000;}
+.lst-social a:before{color: #2D3E58!important;}
+.ftcn-1 .lst-social>li>a:before{color: #fff!important;}
+.selecter-options span,.menu-top ul li a{color: #2D3E58}
+.cate-small>li, .cate-large>li{border-bottom-color: #555;}
+.widget_myscore_leaderboard .playerinfo img, #hall_of_fame .avatar img{background-color: #3D3D3D;border-color: #4D4D4D;}
+.cmnt-cn>div,.cmnt-cn figure{background-color: #3D3D3D;}
+.cmnt-cn>div:before{border-top-color: #3D3D3D;}
+.item-list-tabs,ul.item-list li,[class^="post-"]{border-bottom-color: #444!important;}
+.wpfp-span>.wpfp-link {background-color: #393a4c !important;}
+.menusr li.mycnt ul {background-color: #393a4c !important;}
+.notice-item { background-color: #393a4c !important; color: #FFF !important; }
+.bp-widget.mycred {padding-top: 25px !important;}
+#wp-calendar thead th {background-color: transparent !important;}
+.game_opts>li .wpfp-span>.wpfp-link {background-color: transparent !important; }
+.gm-vote img[src*="off.gif"]{background-position: 0 0!important;}
+.gm-vote img[src*="off.gif"],
+.gm-vote img[src*="off.gif"]{background-position: 0 -60px!important;}
+.gm-vote img[src*="half.gif"],
+.gm-vote img[src*="half.gif"]{background-position: 0 -75px!important;}
+#bbpress-forums li.bbp-header, #bbpress-forums li.bbp-footer,#bbpress-forums div.bbp-forum-header, #bbpress-forums div.bbp-topic-header, #bbpress-forums div.bbp-reply-header{background-color:#4D4D4D}
+#bbpress-forums ul.bbp-forums{border: none}
+#bbpress-forums li.bbp-header, #bbpress-forums li.bbp-footer{border:none}
+#bbpress-forums div.odd, #bbpress-forums ul.odd{background-color: #3D3D3D}
+#bbpress-forums div.even, #bbpress-forums ul.even{background-color: #4D4D4D}
+#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic,#bbpress-forums li.bbp-footer{border-top: 1px solid #000}
+div.bbp-template-notice.info{background-color: #3D3D3D;border: solid #4D4D4D;border-width: 1px 1px 1px 5px;}
+#bbpress-forums fieldset.bbp-form{border: solid #4D4D4D}
+div.bbp-template-notice, div.indicator-hint{background-color: transparent;}
+.bbp-form input[type="text"],.bbp-the-content{color:#000;}
+.load-more a {background-color: #3D3D3D !important;}
+.buddypress table tr.alt td { background: inherit !important;}
+.buddypress table thead tr {background: inherit !important;}
+.item-list-tabs li.current, .item-list-tabs li{background-color: #3D3D3D !important;}
+@media screen and (min-width: 992px)
+{
+nav.menu .menu-item-has-children ul{background-color:#fff;box-shadow:0 0 10px rgba(0,0,0,.2)}
+nav.menu .menu-item-has-children ul li:hover>a{background-color:#ff7518;color:#fff}
+nav.menu>ul>li li a,nav.menu .menu-item-has-children ul a{color:#2D3E58}
+nav.menu>ul>li:hover>a{background-color:#4D4D4D}
+nav.menu li:hover>a,nav.menu li li,a.rndgame{background-color:transparent}
+[class*="gmcn-sldr"] .gm-text{background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1)));background:-webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);background:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);background:linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%)}
+.ie8 [class*="gmcn-sldr"] .gm-text{filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );}
+.ie9 [class*="gmcn-sldr"] .gm-text{background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);}
+.titl .mt-slct-cn+.mt-slct-cn{border-right-color: #333;}
+}
+.woocommerce ul.products li.product .button {background-color: #393a4c !important; color: #fff; font-weight: 500;}
+.woocommerce ul.products li.product .star-rating, .woocommerce .star-rating  {color: #F7E800;}
+.woocommerce p.stars a {color: #F7E800;}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {background-color: #393a4c !important;}
+.woocommerce #review_form #respond .form-submit input, .woocommerce .cart .button, .woocommerce .cart input.button, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce button.button {background-color: #393a4c !important; color:#fff;}.woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce ul.products li.product .price {color: #fff !important;}
+.woocommerce .cart .button, .woocommerce .cart input.button {margin-top: 5px !important;}
+
+::-webkit-scrollbar-thumb{background-color:#7C10AD}
