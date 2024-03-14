@@ -26,6 +26,10 @@ add_action('template_redirect', function () {
 
     global $wp_query;
     if ($wp_query->is_404 === false) {
+        $getParam = $_GET;
+        if (array_key_exists('a', $getParam)) {
+            wp_redirect(home_url('/'));
+        }
         return;
     } else {
         $paths = explode('/', $_SERVER['REQUEST_URI']);

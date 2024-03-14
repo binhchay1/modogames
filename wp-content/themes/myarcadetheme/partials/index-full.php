@@ -2,7 +2,7 @@
 
 <!--<blk-cn>-->
 <div class="blk-cn">
-  <div class="titl"><a href="<?php echo get_category_link( $myarcadetheme_loop['category']->cat_ID ); ?>"><?php echo $myarcadetheme_loop['category']->name; ?></a> <a class="botn-mrgm fa-plus" href="<?php echo get_category_link( $myarcadetheme_loop['category']->cat_ID ); ?>"><?php _e('MORE GAMES', 'myarcadetheme'); ?></a></div>
+	<div class="titl"><h2><a href="<?php echo get_category_link( $myarcadetheme_loop['category']->cat_ID ); ?>" style="color:black; text-decoration: none;"><?php echo $myarcadetheme_loop['category']->name; ?></a></h2> <a class="botn-mrgm fa-plus" href="<?php echo get_category_link( $myarcadetheme_loop['category']->cat_ID ); ?>"><?php _e('MORE GAMES', 'myarcadetheme'); ?></a></div>
     <ul class="lst-gmct-cntcls-n6">
      <?php foreach ( $myarcadetheme_loop['games'] as $post ) : ?>
       <!--<game>-->

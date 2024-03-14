@@ -53,7 +53,7 @@ class Widget_MyArcadeTheme_Box_Fullwidth extends WP_Widget {
     <div class="blk-cn">
       <div class="titl">
         <a href="<?php echo get_category_link( $instance['category'] ); ?>">
-          <?php echo $instance['title']; ?></a> <a class="botn-mrgm fa-plus" href="<?php echo get_category_link( $instance['category'] ); ?>"><?php _e( 'MORE GAMES', 'myarcadetheme'); ?>
+			<?php echo $instance['title']; ?></a> <a class="botn-mrgm fa-plus" href="<?php echo get_category_link( $instance['category'] ); ?>"><?php _e( 'MORE GAMES', 'myarcadetheme'); ?>
         </a>
       </div>
       <?php

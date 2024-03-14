@@ -106,6 +106,7 @@ class Admin_Form
                         "nonce": "' . $nonce . '"
                     }, 
                     function(response) {
+                        console.log(response);
                         if(response == "failed") {
                             let alert = document.getElementById("alert-post");
                             if(alert.classList.contains("alert-success")) {
