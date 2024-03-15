@@ -4,7 +4,7 @@
       // Do some actions before the footer
       do_action('myarcadetheme_before_footer');
       ?>
-	  <div style="text-align: center; margin-left: auto;margin-right: auto; padding: 20px 20px;position: relative; width: 940px;">
+	  <div style="text-align: center; margin-left: auto;margin-right: auto; padding: 20px 20px;position: relative;">
 		<div>
 			<p style="font-size: 30px; font-weight: bold;">
 				About us

@@ -45,6 +45,8 @@ class WP_Widget_MABP_Most_Rated extends WP_Widget {
       $query_args['orderby'] = 'rand';
     }
 
+    $query_args['meta_key'] = 'mabp_game_type';
+
     $most_rated = new WP_Query( $query_args );
     ?>
     <ul class="widget_style_<?php echo $style; ?>">

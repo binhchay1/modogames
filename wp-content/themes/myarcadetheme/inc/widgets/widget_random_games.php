@@ -44,6 +44,8 @@ class WP_Widget_MABP_Random_Games extends WP_Widget {
       $query_args['category__in'] = $category;
     }
 
+    $query_args['meta_key'] = 'mabp_game_type';
+
     // Check if the category query should be overwritten
     if ( is_single() && is_game() ) {
       if ( 'related' == $type ) {

@@ -33,7 +33,7 @@ class WP_Widget_MABP_Recent_Games extends WP_Widget
 
     echo '<div class="most-popu"><ul class="sldr-ft">';
     // <-- START --> HERE COMES THE OUTPUT
-    $games = new WP_Query("showposts=" . $limit . myarcadetheme_mobile_tag() . myarcadetheme_exclude_blog());
+    $games = new WP_Query("showposts=" . $limit . myarcadetheme_mobile_tag() . myarcadetheme_exclude_blog() . '&meta_key=mabp_game_type');
 
     if (!empty($games)) {
       while ($games->have_posts()) : $games->the_post();
