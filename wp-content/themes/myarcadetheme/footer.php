@@ -17,12 +17,12 @@
         <?php if (is_category() and !is_category(array(1))) { ?>
           <?php $category = get_category(get_query_var('cat'));
           $cat_id = $category->cat_ID;
-          $result = $wpdb->get_results("SELECT * FROM wp_category_custom WHERE category_id = $cat_id");
-          if (!empty($result)) {
+          $description = category_description($cat_id);
+          if (!empty($description)) {
           ?>
           <?php } ?>
           <div id="content-footer" class="rounded bg-white">
-            <?php echo html_entity_decode($result[0]->content) ?>
+            <?php echo $description ?>
           </div>
         <?php } ?>
 
