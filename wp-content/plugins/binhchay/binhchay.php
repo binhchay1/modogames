@@ -46,6 +46,39 @@ add_action('init', function ($search) {
     add_rewrite_rule('search/?$', 'index.php?s=' . $search, 'top');
 });
 
+$path = explode('/', $_SERVER['REQUEST_URI']);
+if (in_array('page', $path)) {
+    add_filter('wpseo_canonical', function () {
+        $url = "https://" . $_SERVER['HTTP_HOST'] . '/' . $_SERVER['REQUEST_URI'];
+        $link = '';
+        $statusExp = false;
+
+        $explode = explode('/', $url);
+        foreach ($explode as $check) {
+            if ($check == 'page') {
+                $link = $link . '/';
+                break;
+            }
+
+            if ($link == '') {
+                $link = $check;
+            } else {
+                if ($check == null) {
+                    if ($statusExp == false) {
+                        $link = $link . $check;
+                        $statusExp = true;
+                    } else {
+                        continue;
+                    }
+                }
+                $link = $link . '/' . $check;
+            }
+        }
+
+        return $link;
+    });
+}
+
 
 function create_category_custom_table()
 {
