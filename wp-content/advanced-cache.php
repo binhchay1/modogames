@@ -8,9 +8,9 @@ defined( 'ABSPATH' ) || exit;
 
 define( 'WP_ROCKET_ADVANCED_CACHE', true );
 
-$rocket_path        = '/home/modogames.net/public_html/wp-content/plugins/wp-rocket/';
-$rocket_config_path = '/home/modogames.net/public_html/wp-content/wp-rocket-config/';
-$rocket_cache_path  = '/home/modogames.net/public_html/wp-content/cache/wp-rocket/';
+$rocket_path        = 'C:\laragon\www\modogames\wp-content\plugins\wp-rocket/';
+$rocket_config_path = 'C:\laragon\www\modogames/wp-content/wp-rocket-config/';
+$rocket_cache_path  = 'C:\laragon\www\modogames/wp-content/cache/wp-rocket/';
 
 if (
 	version_compare( phpversion(), '7.3', '<' )
@@ -23,8 +23,8 @@ if (
 }
 
 
-if ( file_exists( '/home/modogames.net/public_html/wp-content/plugins/wp-rocket/inc/classes/dependencies/mobiledetect/mobiledetectlib/Mobile_Detect.php' ) && ! class_exists( 'WP_Rocket_Mobile_Detect' ) ) {
-	include_once '/home/modogames.net/public_html/wp-content/plugins/wp-rocket/inc/classes/dependencies/mobiledetect/mobiledetectlib/Mobile_Detect.php';
+if ( file_exists( 'C:\laragon\www\modogames\wp-content\plugins\wp-rocket/inc/classes/dependencies/mobiledetect/mobiledetectlib/Mobile_Detect.php' ) && ! class_exists( 'WP_Rocket_Mobile_Detect' ) ) {
+	include_once 'C:\laragon\www\modogames\wp-content\plugins\wp-rocket/inc/classes/dependencies/mobiledetect/mobiledetectlib/Mobile_Detect.php';
 }
 
 

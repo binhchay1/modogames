@@ -1,17 +1,15 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-$rocket_cookie_hash = 'af076020d4fc66059c10453698cad381';
-$rocket_logged_in_cookie = 'wordpress_logged_in_af076020d4fc66059c10453698cad381';
+$rocket_cookie_hash = '33843f34e7c085fd0558630ff0e9ec1c';
+$rocket_logged_in_cookie = 'wordpress_logged_in_33843f34e7c085fd0558630ff0e9ec1c';
 $rocket_cache_mobile_files_tablet = 'desktop';
 $rocket_cache_mobile = 1;
 $rocket_do_caching_mobile_files = 1;
-$rocket_cache_reject_uri = '/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)';
+$rocket_cache_reject_uri = '/modogames(/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$))';
 $rocket_cache_reject_cookies = 'wp-postpass_|wptouch_switch_toggle|comment_author_|comment_author_email_';
 $rocket_cache_reject_ua = 'facebookexternalhit|WhatsApp';
-$rocket_cache_query_strings = array(
-  0 => 'q',
-);
+$rocket_cache_query_strings = array();
 $rocket_secret_cache_key = '65e93f162a7c8119481899';
 $rocket_cache_ssl = 1;
 $rocket_cache_ignored_parameters = array(

@@ -34,9 +34,10 @@ function myarcade_manage_games()
 	</script>
 	<?php
 
-	// $feedcategories = get_option('myarcade_categories');
+	$listCategoryGamePlugin = get_option('myarcade_categories');
 	$listCategory = get_categories();
 	$feedcategories = array();
+	$feedcategoriesGamePlugin = array();
 	foreach ($listCategory as $cate) {
 		$feedcategories[] = [
 			'Name' => $cate->name,
@@ -44,6 +45,10 @@ function myarcade_manage_games()
 			'Status' => 'checked',
 			'Mapping' => '',
 		];
+	}
+
+	foreach ($listCategoryGamePlugin as $cateGamePlugin) {
+		$feedcategoriesGamePlugin[] = $cateGamePlugin['Slug'];
 	}
 
 	$game_type          = filter_input(INPUT_POST, 'distr', FILTER_UNSAFE_RAW, array('options' => array('default' => 'all')));
@@ -80,11 +85,26 @@ function myarcade_manage_games()
 		}
 
 		if ($cat != 'all') {
-			foreach ($feedcategories as $category) {
-				if ($category['Slug'] == $cat) {
-					$query_array[] = "categories LIKE '%" . $category['Name'] . "%'";
-					break;
+			if (in_array($cat, $feedcategoriesGamePlugin)) {
+				foreach ($feedcategories as $category) {
+					if ($category['Slug'] == $cat) {
+						$query_array[] = "categories LIKE '%" . $category['Name'] . "%'";
+						break;
+					}
 				}
+			} else {
+				$args = array('numberposts' => -1, 'category_name' => $cat);
+				$posts = get_posts($args);
+				$listIdPost = array();
+
+				foreach ($posts as $post) {
+					$listIdPost[] = $post->ID;
+				}
+
+
+				$arrQueryID = implode(', ', $listIdPost);
+
+				$query_array[] = "postid IN (" . $arrQueryID . ")";
 			}
 		}
 
@@ -201,7 +221,6 @@ function myarcade_manage_games()
 			</div>
 
 			<div class="clear"> </div>
-			<?php var_dump($feedcategories); ?>
 			<div class="myarcade_border white" style="width:300px;height:30px;float:left;">
 				<?php _e("Game Category", 'myarcadeplugin'); ?>:
 				<select name="category" id="category">
@@ -210,8 +229,8 @@ function myarcade_manage_games()
 					<?php
 					foreach ($feedcategories as $category) {
 					?><option value="<?php echo esc_attr($category['Slug']); ?>" <?php myarcade_selected($cat, $category['Slug']); ?>><?php echo esc_html($category['Name']); ?></option><?php
-																																																	}
-																																																		?>
+																																														}
+																																															?>
 				</select>
 			</div>
 

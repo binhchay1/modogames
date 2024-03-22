@@ -11,6 +11,7 @@
 /wp-content/themes/index.php
 /license.txt
 /readme.html
+/wp-content/cache
 
 # Configuration
 wp-config.php
