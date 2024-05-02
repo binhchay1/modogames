@@ -23,7 +23,22 @@ function myarcade_publish_games() {
 
 	$general = get_option('myarcade_general');
 
-	$feedcategories = get_option('myarcade_categories');
+	$listCategoryGamePlugin = get_option('myarcade_categories');
+	$listCategory = get_categories();
+	$feedcategories = array();
+	$feedcategoriesGamePlugin = array();
+	foreach ($listCategory as $cate) {
+		$feedcategories[] = [
+			'Name' => $cate->name,
+			'Slug' => $cate->slug,
+			'Status' => 'checked',
+			'Mapping' => '',
+		];
+	}
+
+	foreach ($listCategoryGamePlugin as $cateGamePlugin) {
+		$feedcategoriesGamePlugin[] = $cateGamePlugin['Slug'];
+	}
 
 	$action = filter_input( INPUT_POST, 'action' );
 
@@ -53,8 +68,28 @@ function myarcade_publish_games() {
 			$query_array[] = "leaderboard_enabled = '1'";
 		}
 
-		if ( $cat != 'all') {
-			$query_array[] = "categories LIKE '%".$feedcategories[ (int) $cat ]['Name']."%'";
+		if ($cat != 'all') {
+			if (in_array($cat, $feedcategoriesGamePlugin)) {
+				foreach ($feedcategories as $category) {
+					if ($category['Slug'] == $cat) {
+						$query_array[] = "categories LIKE '%" . $category['Name'] . "%'";
+						break;
+					}
+				}
+			} else {
+				$args = array('numberposts' => -1, 'category_name' => $cat);
+				$posts = get_posts($args);
+				$listIdPost = array();
+
+				foreach ($posts as $post) {
+					$listIdPost[] = $post->ID;
+				}
+
+
+				$arrQueryID = implode(', ', $listIdPost);
+
+				$query_array[] = "postid IN (" . $arrQueryID . ")";
+			}
 		}
 
 		if ( $posts ) {
